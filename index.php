@@ -57,6 +57,5 @@ for ($i = 0; $i < count($arr); $i++) {
     echo($arr[$i] . '<br>');
 }
 ?>
-
 </body>
 </html>
