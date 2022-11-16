@@ -11,7 +11,6 @@
 <?php
 require 'auth.php';
 require 'header.php';
-
 function dd($var_dump, $html = false, $die = false)
 {
     echo '<pre style="color:#850085;z-index:999999999!important;position:relative;background: #000000;">';
