@@ -11,7 +11,7 @@
 
 
 <?php
-include 'header.php';
+require 'header.php';
 const ADMIN_LOGIN = '1';
 const ADMIN_PASSWORD = '1';
 
