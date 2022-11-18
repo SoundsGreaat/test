@@ -36,7 +36,7 @@ if (isset($_GET['city'])) {
     $url = "https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lon&appid=df5f219bc934fe24a0f5d2136118b4de";
 }
 
-$APIobj = json_decode(file_get_contents($url));
+$APIobj = json_decode(curl_get_contents($url));
 $f = $APIobj->main->temp;
 $c = $f - 273.15;
 echo('<h1>' . json_decode(file_get_contents("https://ifconfig.co/json?ip={$_SERVER['REMOTE_ADDR']}"))->ip . '</h1>' .
