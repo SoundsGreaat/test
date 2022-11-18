@@ -11,15 +11,6 @@
 <?php
 require 'auth.php';
 require 'header.php';
-function dd($var_dump, $html = false, $die = false)
-{
-    echo '<pre style="color:#850085;z-index:999999999!important;position:relative;background: #000000;">';
-    if ($html) var_dump(htmlspecialchars($var_dump, ENT_QUOTES)); else var_dump($var_dump);
-    echo '</pre>';
-    if ($die) {
-        die();
-    }
-}
 
 $url = 'https://api.openweathermap.org/data/2.5/weather?lat=11,11&lon=12,12&appid=df5f219bc934fe24a0f5d2136118b4de';
 $lat = '';

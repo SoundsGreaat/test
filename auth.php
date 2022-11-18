@@ -1,4 +1,13 @@
 <?php
+function dd($var_dump, $html = false, $die = false)
+{
+    echo '<pre style="color:#850085;z-index:999999999!important;position:relative;background: #000000;">';
+    if ($html) var_dump(htmlspecialchars($var_dump, ENT_QUOTES)); else var_dump($var_dump);
+    echo '</pre>';
+    if ($die) {
+        die();
+    }
+}
 function curl_get_contents($url)
 {
     $ch = curl_init($url);
