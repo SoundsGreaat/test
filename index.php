@@ -4,7 +4,10 @@ require 'header.php';
 ?>
     <form action="index.php" method="post">
         <input type="login" name="login" placeholder="enter login">
-        <input type="password" name="password" placeholder="enter password">
+        <input type="password" name="password" placeholder="enter password"><br>
+        <input type="radio" name="radio" value="1">1<br>
+        <input type="radio" name="radio" value="2">2<br>
+        <input type="radio" name="radio" value="3">3<br>
         <input type="submit" value="Подтвердить" class="btn btn-success">
     </form>
 <?php
@@ -22,5 +25,5 @@ if (isset($_GET['_ijt'])) {
     $link = explode('?_ijt', $_SERVER['REQUEST_URI']);
     $redirect = "http://$_SERVER[HTTP_HOST]$link[0]";
     header("Location: $redirect");
-}
+//}
 ?>
